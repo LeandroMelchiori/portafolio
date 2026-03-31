@@ -13,14 +13,14 @@ Este proyecto es un **Trabajo Práctico (TP)** correspondiente a la **Práctica 
 ### Estructura del Proyecto:
 - [x] Archivo `index.html` ubicado en la raíz.
 - [x] Carpeta `css` que contiene el archivo `styles.css`.
-- [x] Carpeta `img` para recursos gráficos (foto de perfil).
+- [x] Carpeta `img` para recursos gráficos.
 - [x] Archivo `README.md` creado, que incluye una breve descripción del TP y este checklist.
 
 ### Repositorio y Publicación:
 - [x] Repositorio en GitHub creado.
 - [x] Proyecto subido al repositorio.
-- [ ] Proyecto publicado utilizando GitHub Pages. *(pendiente)*
-- [ ] En el `README.md` se indica la URL de GitHub Pages. *(pendiente)*
+- [] Proyecto publicado utilizando Vercel.
+- [] En el `README.md` se indica la URL de Vercel.
 
 ### Uso de Google Fonts:
 - [x] Enlace a Google Fonts incluido en la sección `head` del HTML.
@@ -37,7 +37,7 @@ Este proyecto es un **Trabajo Práctico (TP)** correspondiente a la **Práctica 
 **Secciones obligatorias en `main`:**
 - [x] Barra de navegación (`nav`) presente con 5 enlaces: Sobre mí, Proyectos, Habilidades, Películas y Contacto.
 - [x] Sección `#sobre-mi` con párrafo descriptivo e imagen de perfil con `alt`.
-- [x] Sección `#tarjetas` con 6 tarjetas de proyectos usando CSS Grid.
+- [x] Sección `#proyectos` con 6 tarjetas de proyectos usando CSS Grid.
 - [x] Sección `#habilidades` con tabla de tecnologías y lista de hobbies.
 - [x] Sección `#contacto` con formulario: Nombre, Apellido, Email, Teléfono y botón submit.
 - [x] Sección `#peliculas` con 3 películas favoritas (título, imagen y descripción).
@@ -49,7 +49,7 @@ Este proyecto es un **Trabajo Práctico (TP)** correspondiente a la **Práctica 
 - [x] La tipografía importada desde Google Fonts se aplica correctamente en todos los elementos via `font-family: var(--font-main)`.
 
 **Layout y Organización:**
-- [x] El layout de la sección `#tarjetas` usa **CSS Grid** con `grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr))`.
+- [x] El layout de la sección `#proyectos` usa **CSS Grid** con `grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr))`.
 - [x] **¿Qué ventajas encontraste al utilizar Flexbox o Grid?**
   > CSS Grid me permitió que las tarjetas se reorganicen solas según el ancho disponible sin necesidad de media queries específicas para cada breakpoint. Flexbox lo usé para alinear elementos internos (header, footer, hero). La combinación de ambas técnicas hace que el layout sea completamente fluido y responsive.
 
