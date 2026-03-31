@@ -4,7 +4,7 @@
 
 Este proyecto es un **Trabajo Práctico (TP)** correspondiente a la **Práctica Formativa Obligatoria 1 (PFO1)** de la carrera de Desarrollo Web del IFTS N.º 29. Consiste en una Landing Page de Portafolio Personal desarrollada únicamente con **HTML y CSS puro** (y JavaScript mínimo para interactividad), sin frameworks externos. El sitio presenta información personal, proyectos destacados, habilidades técnicas, películas favoritas y un formulario de contacto.
 
-🌐 **URL GitHub Pages:** *(completar luego de publicar)*
+🌐 **URL Vercel:** https://portafolio-leandromelchiori.vercel.app/
 
 ---
 
@@ -19,8 +19,8 @@ Este proyecto es un **Trabajo Práctico (TP)** correspondiente a la **Práctica 
 ### Repositorio y Publicación:
 - [x] Repositorio en GitHub creado.
 - [x] Proyecto subido al repositorio.
-- [] Proyecto publicado utilizando Vercel.
-- [] En el `README.md` se indica la URL de Vercel.
+- [x] Proyecto publicado utilizando Vercel.
+- [x] En el `README.md` se indica la URL de Vercel.
 
 ### Uso de Google Fonts:
 - [x] Enlace a Google Fonts incluido en la sección `head` del HTML.
