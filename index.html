@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leandro Melchiori - Portafolio Personal</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Google Fonts: Inter para UI limpia, y JetBrains Mono para texto de código -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- =====================================================
+        Logo/nombre del sitio y barra de navegación
+  ====================================================== -->
+  <header id="inicio">
+    <div class="header-inner">
+      <a href="#inicio" class="logo">LM</a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#tarjetas">Proyectos</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#peliculas">Películas</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+        <!-- Botón hamburguesa para mobile -->
+        <button class="menu-toggle" aria-label="Abrir menú" onclick="toggleMenu()">&#9776;</button>
+      </nav>
+    </div>
+
+    <!-- Menú mobile desplegable -->
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#inicio" onclick="toggleMenu()">Inicio</a>
+      <a href="#sobre-mi" onclick="toggleMenu()">Sobre mí</a>
+      <a href="#tarjetas" onclick="toggleMenu()">Proyectos</a>
+      <a href="#habilidades" onclick="toggleMenu()">Habilidades</a>
+      <a href="#peliculas" onclick="toggleMenu()">Películas</a>
+      <a href="#contacto" onclick="toggleMenu()">Contacto</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- =====================================================
+         HERO: Presentación rápida antes de la sección sobre-mi
+    ====================================================== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hero-badge">Full Stack Developer · Cloud Solutions Architect</p>
+          <h1>Leandro<br>Melchiori</h1>
+          <p class="hero-location">📍 Rosario, Santa Fe, Argentina</p>
+          <p class="hero-description">
+            Desarrollador Full Stack apasionado por crear soluciones tecnológicas
+            escalables y con impacto real. Trabajo con Java, Python, Node.js y React,
+            integrando bases de datos Postgres, MySql y MongoDB, y desplegando en entornos Cloud como AWS, Azure y OCI.
+          </p>
+          <div class="hero-links">
+            <a href="#sobre-mi" class="btn btn-primary">Conocerme más</a>
+            <a href="#contacto" class="btn btn-outline">Contactar</a>
+          </div>
+          <div class="hero-social">
+            <a href="https://github.com/LeandroMelchiori" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+            <a href="https://linkedin.com/in/leandromelchiori-developer" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="mailto:leandromelchiori@gmail.com" aria-label="Email">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.907 1.528-1.148C21.69 2.28 24 3.434 24 5.457z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="hero-image-wrap">
+          <div class="hero-image-glow"></div>
+          <!-- Imagen de perfil. Colocar la foto en img/profile-leandro.jpg -->
+          <img
+            src="img/profile-leandro.jpg"
+            alt="Leandro Melchiori - Desarrollador Full Stack"
+            class="hero-image"
+            onerror="this.src='https://ui-avatars.com/api/?name=Leandro+Melchiori&size=320&background=6366f1&color=fff&font-size=0.33'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SOBRE MÍ: Descripción personal e intereses
+    ====================================================== -->
+    <section id="sobre-mi">
+      <div class="container">
+        <span class="section-label">Sobre mí</span>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Soy un <strong>Desarrollador Full Stack</strong> apasionado por crear soluciones
+              tecnológicas escalables y con impacto real. Trabajo principalmente en el desarrollo
+              de APIs, sistemas backend y plataformas digitales, utilizando tecnologías como
+              <strong>Java (Spring Boot), Python, Node.js y React</strong>,
+              integrando bases de datos como PostgreSQL y MySQL.
+            </p>
+            <p>
+              Tengo experiencia desplegando aplicaciones en entornos <strong>Cloud (AWS)</strong> y
+              trabajando con arquitecturas modernas orientadas a servicios. Me interesa especialmente
+              construir tecnología que resuelva problemas concretos, desde plataformas digitales hasta
+              herramientas que potencien proyectos productivos y emprendimientos.
+            </p>
+            <p>
+              Ademas, tengo experiencia como capacitador de emprendedores de la economia social en el gobierno de la provincia de Santa Fe,
+              donde brindo formación en habilidades digitales, marketing online y desarrollo de proyectos tecnológicos.
+              Tambien desarrollo soluciones digitales que ayudan a emprendedores a mejorar su presencia
+              online y comercialización. Siempre estoy explorando nuevas tecnologías y buscando
+              proyectos donde pueda aportar soluciones innovadoras, escalables y bien diseñadas.
+            </p>
+          </div>
+          <div class="about-areas">
+            <h3>Áreas en las que trabajo</h3>
+            <ul class="areas-list">
+              <li>Desarrollo backend y APIs</li>
+              <li>Arquitectura de aplicaciones</li>
+              <li>Bases de datos y optimización</li>
+              <li>Cloud computing y despliegues</li>
+              <li>Automatización y herramientas basadas en IA</li>
+              <li>Capacitación y alfabetización digital</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         TARJETAS: Proyectos destacados en columnas con Flexbox
+    ====================================================== -->
+    <section id="tarjetas">
+      <div class="container">
+
+        <span class="section-label">Proyectos Destacados</span>
+        <p class="section-desc">Una selección de proyectos personales que demuestran mis habilidades en desarrollo backend, apps móviles y frontend.</p>
+
+        <div class="cards-grid">
+
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=220&fit=crop"
+              alt="EcoSocial - Plataforma para emprendedores de la economía social"
+              class="card-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">EcoSocial - Backend</h3>
+              <p class="card-text">
+                API REST para una plataforma digital que potencia emprendedores de la economía social.
+                Combina un catálogo público de emprendimientos con un foro comunitario.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Java 17</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">Docker</span>
+              </div>
+              <a href="https://github.com/LeandroMelchiori/EcoSocial-BackEnd" target="_blank" rel="noopener noreferrer" class="card-link">Ver en GitHub →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=400&h=220&fit=crop"
+              alt="ApiMedica - Sistema de gestión médica con Spring Boot"
+              class="card-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">ApiMedica</h3>
+              <p class="card-text">
+                API REST para gestión médica: pacientes, médicos y citas. Implementa
+                autenticación JWT, autorización y documentación Swagger completa.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Java 17</span>
+                <span class="tag">Spring Security</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">JWT</span>
+              </div>
+              <a href="https://github.com/LeandroMelchiori/ApiMedica" target="_blank" rel="noopener noreferrer" class="card-link">Ver en GitHub →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=220&fit=crop"
+              alt="Club Deportivo - App Android para gestión de clubes"
+              class="card-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Club Deportivo</h3>
+              <p class="card-text">
+                Aplicación Android nativa para gestión integral de clubes deportivos:
+                socios, actividades, horarios, pagos y reportes con SQLite.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Kotlin</span>
+                <span class="tag">Android SDK</span>
+                <span class="tag">SQLite</span>
+                <span class="tag">Material Design</span>
+              </div>
+              <a href="https://github.com/LeandroMelchiori/app_ClubDeportivo" target="_blank" rel="noopener noreferrer" class="card-link">Ver en GitHub →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=220&fit=crop"
+              alt="React ToDoList - Gestor de tareas con React 18"
+              class="card-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">React ToDoList</h3>
+              <p class="card-text">
+                Gestor de tareas con React 18. Custom hooks, Context API, persistencia
+                en localStorage y sincronización entre pestañas del navegador.
+              </p>
+              <div class="card-tags">
+                <span class="tag">React 18</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Context API</span>
+                <span class="tag">LocalStorage</span>
+              </div>
+              <a href="https://github.com/LeandroMelchiori/React-ToDoList" target="_blank" rel="noopener noreferrer" class="card-link">Ver en GitHub →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=400&h=220&fit=crop"
+              alt="Screenmatch - Gestión de series y películas con Java"
+              class="card-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">Screenmatch - Series</h3>
+              <p class="card-text">
+                App en Java para gestionar y calificar temporadas, series y episodios.
+                POO con persistencia en PostgreSQL e interfaz web HTML/CSS/JS.
+              </p>
+              <div class="card-tags">
+                <span class="tag">Java 17</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">HTML/CSS</span>
+              </div>
+              <a href="https://github.com/LeandroMelchiori/Screenmatch---Series" target="_blank" rel="noopener noreferrer" class="card-link">Ver en GitHub →</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img
+              src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=400&h=220&fit=crop"
+              alt="Proyectos en desarrollo - Ver perfil de GitHub"
+              class="card-img"
+            />
+            <div class="card-body">
+              <h3 class="card-title">+Proyectos en GitHub</h3>
+              <p class="card-text">
+                Hay más proyectos disponibles en mi perfil de GitHub. Siempre
+                explorando nuevas tecnologías y construyendo cosas interesantes.
+              </p>
+              <div class="card-tags">
+                <span class="tag">AWS</span>
+                <span class="tag">Python</span>
+                <span class="tag">Node.js</span>
+                <span class="tag">Next.js</span>
+              </div>
+              <a href="https://github.com/LeandroMelchiori" target="_blank" rel="noopener noreferrer" class="card-link">Ver perfil completo →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         HABILIDADES: Tabla de tecnologías dominadas y por aprender
+    ====================================================== -->
+    <section id="habilidades">
+      <div class="container">
+        <span class="section-label">Habilidades Técnicas</span>
+        <p class="section-desc">Tecnologías y herramientas con las que trabajo para construir soluciones escalables y eficientes.</p>
+
+        <div class="skills-wrap">
+          <table class="skills-table">
+            <thead>
+              <tr>
+                <th>Categoría</th>
+                <th>Tecnologías que domino</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Lenguajes</strong></td>
+                <td>Java, Python, JavaScript, TypeScript, Kotlin</td>
+              </tr>
+              <tr>
+                <td><strong>Frameworks</strong></td>
+                <td>Spring Boot, Django REST, React, Next.js, Express.js, FastAPI</td>
+              </tr>
+              <tr>
+                <td><strong>Bases de datos</strong></td>
+                <td>PostgreSQL, MySQL, MongoDB, Redis</td>
+              </tr>
+              <tr>
+                <td><strong>Cloud &amp; DevOps</strong></td>
+                <td>AWS, Docker, Git, Linux, Windows Server, Kubernetes</td>
+              </tr>
+              <tr>
+                <td><strong>Otras</strong></td>
+                <td>APIs REST, Testing QA, Marketing Digital, Automatización, Machine Learning, LLMs/td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="hobbies">
+            <h3>Hobbies &amp; Intereses</h3>
+            <ul class="hobbies-list">
+              <li>🎮 Gaming y diseño de videojuegos</li>
+              <li>🎭 Actor de Comedias musicales</li>
+              <li>🎬 Cine (especialmente ciencia ficción y terror)</li>
+              <li>🏃 Deporte al aire libre</li>
+              <li>🤖 Experimentar con modelos de IA y LLMs</li>
+              <li>📚 Lectura de ciencia ficción y tecnología</li>
+              <li>🎸 Música (guitarra, piano y composición)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <!-- =====================================================
+         PELÍCULAS FAVORITAS: Las 3 mejores según el autor
+    ====================================================== -->
+    <section id="peliculas">
+      <div class="container">
+        <span class="section-label">Películas Favoritas</span>
+        <p class="section-desc">Las tres películas que más me marcaron y que recomendaría a cualquier persona.</p>
+ 
+        <div class="movies-grid">
+ 
+          <article class="movie-card">
+            <img
+              src="img/Interestellar.png"
+              alt="Póster de Interstellar - 2014, película de Christopher Nolan sobre viajes espaciales"
+              class="movie-poster"
+            />
+            <div class="movie-info">
+              <span class="movie-year">2014</span>
+              <h3 class="movie-title">Interstellar</h3>
+              <p class="movie-desc">
+                Nolan combina ciencia, emoción y espectáculo de una manera que pocas películas
+                logran. La representación de los agujeros negros basada en física real la convierte
+                en algo fascinante más allá del entretenimiento. Una película que te hace pensar
+                en la relatividad del tiempo y el amor como fuerza que trasciende dimensiones.
+              </p>
+            </div>
+          </article>
+ 
+          <article class="movie-card">
+            <img
+              src="img/Soul.png"
+              alt="Póster de Soul - 2020, película animada de Pixar y Disney"
+              class="movie-poster"
+            />
+            <div class="movie-info">
+              <span class="movie-year">2020</span>
+              <h3 class="movie-title">Soul</h3>
+              <p class="movie-desc">
+                Pixar logró algo extraordinario: una película animada que habla de propósito,
+                pasión y qué significa realmente estar vivo. Soul te invita a reflexionar sobre
+                si estás viviendo para algo o simplemente existiendo. Una obra que emociona
+                a cualquier edad y deja una huella duradera.
+              </p>
+            </div>
+          </article>
+ 
+          <article class="movie-card">
+            <img
+              src="img/Free_Guy.png"
+              alt="Póster de Free Guy - 2021, película sobre un personaje de videojuego que cobra vida"
+              class="movie-poster"
+            />
+            <div class="movie-info">
+              <span class="movie-year">2021</span>
+              <h3 class="movie-title">Free Guy</h3>
+              <p class="movie-desc">
+                Una película que mezcla perfectamente el mundo de los videojuegos con una historia
+                emotiva sobre identidad y libertad. Como desarrollador, ver cómo se representan
+                los mundos virtuales y la IA desde una perspectiva entretenida y accesible fue
+                muy disfrutable. Ryan Reynolds en su mejor versión.
+              </p>
+            </div>
+          </article>
+ 
+        </div>
+      </div>
+    </section>
+ 
+ 
+    <!-- =====================================================
+         CONTACTO: Formulario con nombre, apellido, email y teléfono
+         Mejora futura: conectar con backend para envío real de emails
+    ====================================================== -->
+    <section id="contacto">
+      <div class="container">
+        <span class="section-label">Contacto</span>
+        <div class="contact-grid">
+
+          <div class="contact-info">
+            <h2 class="contact-heading">
+              ¿Tenés un proyecto en mente?<br>Hablemos.
+            </h2>
+            <p class="contact-sub">📍 Rosario, Santa Fe, Argentina</p>
+
+            <div class="contact-details">
+              <div class="contact-item">
+                <span class="contact-label">Email</span>
+                <a href="mailto:leandromelchiori@gmail.com">leandromelchiori@gmail.com</a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">GitHub</span>
+                <a href="https://github.com/LeandroMelchiori" target="_blank" rel="noopener noreferrer">@LeandroMelchiori</a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">LinkedIn</span>
+                <a href="https://linkedin.com/in/leandromelchiori-developer" target="_blank" rel="noopener noreferrer">@leandromelchiori-developer</a>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" onsubmit="handleSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required />
+              </div>
+              <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+54 9 341 000-0000" />
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4" placeholder="Contame sobre tu proyecto..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">Enviar mensaje</button>
+            <p class="form-success" id="form-success">✅ ¡Mensaje enviado! Te respondo a la brevedad.</p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =====================================================
+       FOOTER: Información adicional y redes sociales
+  ====================================================== -->
+  <footer>
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; 2025 Leandro Melchiori. Todos los derechos reservados.</p>
+      <div class="footer-social">
+        <a href="https://github.com/LeandroMelchiori" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/leandromelchiori-developer" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:leandromelchiori@gmail.com" aria-label="Email">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 010 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.907 1.528-1.148C21.69 2.28 24 3.434 24 5.457z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle menú mobile
+    function toggleMenu() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('open');
+    }
+
+    // Header con fondo al hacer scroll
+    window.addEventListener('scroll', () => {
+      const header = document.querySelector('header');
+      header.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Manejo del formulario de contacto
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('form-success').style.display = 'block';
+      e.target.reset();
+      setTimeout(() => {
+        document.getElementById('form-success').style.display = 'none';
+      }, 4000);
+    }
+  </script>
+
+</body>
+</html>
