@@ -26,24 +26,26 @@ El portafolio presenta un perfil **Full Stack** con foco en:
 5. **TaskFlow:** gestor local-first de tareas y agenda.
 6. **Club Deportivo:** aplicación Android de gestión desarrollada en equipo.
 
-El sitio también presenta como casos de estudio privados:
+## Casos de estudio privados
 
-- Analizador Banco Solidario;
-- Generador de Certificados;
-- Pulse Tickets.
+Los proyectos privados se presentan mediante el problema, la solución y el impacto operativo, ya que su código y sus datos no pueden exponerse públicamente.
+
+- **Observatorio de Datos Banco Solidario:** consolida Excel y Word, normaliza la información, detecta inconsistencias y produce automáticamente indicadores, tablas, gráficos y reportes estadísticos exportables.
+- **Gestión Integral de Talleres y Certificaciones:** administra asistentes y tandas, valida fuentes de datos, genera certificados personalizados y automatiza correos, plantillas, colas, reintentos, rebotes y reenvíos.
+- **Pulse — Gestión Integral de Eventos y Ticketing:** modela la operación de organizadores, espacios y eventos mediante stock atómico, checkout idempotente, entradas digitales, reembolsos, staff y check-in.
 
 ## Mejoras de esta versión
 
 - Incorpora TechRetAI como proyecto principal de IA aplicada.
 - Jerarquiza los proyectos según impacto, alcance y disponibilidad pública.
-- Separa proyectos públicos de casos de estudio privados.
+- Presenta los casos privados como historias de problema, solución e impacto.
+- Renombra los casos privados según el alcance real de cada producto.
 - Añade una sección de experiencia profesional y formación actual.
 - Actualiza LiteraLura a su alcance Full Stack real.
 - Refuerza el posicionamiento en automatización, RAG e infraestructura.
 - Mejora la experiencia responsive sin ocultar la navegación móvil.
 - Incorpora metadatos SEO, Open Graph, URL canónica y datos estructurados.
 - Mantiene navegación semántica, foco visible, skip link y reducción de movimiento.
-- Utiliza enlaces de contacto reales y evita formularios simulados.
 
 ## Tecnologías
 
