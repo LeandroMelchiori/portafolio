@@ -3,12 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portafolio de Leandro Melchiori, desarrollador Full Stack especializado en Java, Spring Boot, React, Next.js, Python y automatización de procesos." />
-  <title>Leandro Melchiori | Full Stack Developer</title>
+  <meta name="description" content="Portafolio de Leandro Melchiori, desarrollador Full Stack especializado en Java, Spring Boot, React, Next.js, Python, automatización e inteligencia artificial aplicada." />
+  <meta name="theme-color" content="#080b12" />
+  <meta name="color-scheme" content="dark" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_AR" />
+  <meta property="og:title" content="Leandro Melchiori | Full Stack Developer" />
+  <meta property="og:description" content="Productos digitales, automatización e IA aplicada a problemas reales." />
+  <meta property="og:url" content="https://www.sachadev.me/" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="canonical" href="https://www.sachadev.me/" />
+  <title>Leandro Melchiori | Full Stack, automatización e IA aplicada</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Leandro Melchiori",
+    "url": "https://www.sachadev.me/",
+    "sameAs": [
+      "https://github.com/LeandroMelchiori",
+      "https://www.linkedin.com/in/leandromelchiori-developer/"
+    ],
+    "jobTitle": "Full Stack Developer",
+    "knowsAbout": [
+      "Java",
+      "Spring Boot",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Python",
+      "Automatización",
+      "Retrieval-Augmented Generation"
+    ]
+  }
+  </script>
 </head>
 <body>
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
@@ -16,219 +51,348 @@
   <header class="site-header">
     <a class="brand" href="#inicio" aria-label="Ir al inicio">LM</a>
     <nav aria-label="Navegación principal">
-      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#sobre-mi">Perfil</a>
       <a href="#proyectos">Proyectos</a>
-      <a href="#tecnologias">Tecnologías</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#tecnologias">Stack</a>
       <a href="#contacto">Contacto</a>
     </nav>
+    <a class="header-cta" href="mailto:leandromelchiori@gmail.com">Hablemos</a>
   </header>
 
   <main id="contenido">
     <section class="hero" id="inicio">
       <div class="hero-copy">
-        <p class="eyebrow">Full Stack Developer · Automatización · Impacto social</p>
-        <h1>Construyo productos digitales que resuelven problemas reales.</h1>
+        <p class="eyebrow"><span class="status-dot"></span> Full Stack Developer · Automatización · IA aplicada</p>
+        <h1>Transformo procesos reales en productos digitales.</h1>
         <p class="hero-text">
-          Desarrollo aplicaciones web, APIs y herramientas de automatización con Java, Spring Boot,
-          React, Next.js, TypeScript y Python. Combino tecnología, análisis de procesos y experiencia
-          directa con usuarios para convertir tareas manuales en soluciones funcionales y sostenibles.
+          Desarrollo aplicaciones web, APIs y herramientas inteligentes con Java, Spring Boot,
+          React, Next.js, TypeScript y Python. Combino ingeniería de software, análisis de procesos
+          y experiencia directa con usuarios para construir soluciones útiles, medibles y sostenibles.
         </p>
         <div class="hero-actions">
-          <a class="button primary" href="#proyectos">Ver proyectos</a>
-          <a class="button secondary" href="https://www.linkedin.com/in/leandromelchiori-developer/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="button primary" href="#proyectos">Explorar proyectos</a>
+          <a class="button secondary" href="https://github.com/LeandroMelchiori" target="_blank" rel="noopener noreferrer">Ver GitHub</a>
         </div>
+
         <ul class="hero-facts" aria-label="Áreas principales">
-          <li><strong>Backend</strong><span>Java · Spring Boot</span></li>
-          <li><strong>Frontend</strong><span>React · Next.js</span></li>
-          <li><strong>Automatización</strong><span>Python · Datos · Documentos</span></li>
+          <li><strong>Backend</strong><span>Java · Spring Boot · APIs</span></li>
+          <li><strong>IA y automatización</strong><span>Python · RAG · Documentos</span></li>
+          <li><strong>Entrega</strong><span>Testing · Docker · CI/CD · Cloud</span></li>
         </ul>
       </div>
-      <div class="hero-visual" aria-hidden="true">
-        <div class="code-card">
-          <span>producto_real.java</span>
-          <pre><code>problema
-  → análisis
-  → diseño
-  → desarrollo
-  → impacto</code></pre>
+
+      <div class="hero-visual" aria-label="Resumen del enfoque de trabajo">
+        <div class="terminal-card">
+          <div class="terminal-top">
+            <span></span><span></span><span></span>
+            <small>producto_real.pipeline</small>
+          </div>
+          <pre><code><span class="code-muted">01</span> problema.detectar()
+<span class="code-muted">02</span> usuarios.comprender()
+<span class="code-muted">03</span> solucion.diseñar()
+<span class="code-muted">04</span> software.construir()
+<span class="code-muted">05</span> calidad.validar()
+<span class="code-muted">06</span> producto.desplegar()
+
+<span class="code-output">✓ impacto generado</span></code></pre>
+        </div>
+        <div class="floating-card">
+          <span>En producción</span>
+          <strong>RAG · PWA · Full Stack</strong>
         </div>
       </div>
     </section>
 
+    <section class="proof-strip" aria-label="Resumen profesional">
+      <div><strong>Productos desplegados</strong><span>Aplicaciones accesibles y en funcionamiento</span></div>
+      <div><strong>Procesos reales</strong><span>Economía social, gestión y capacitación</span></div>
+      <div><strong>Ingeniería completa</strong><span>Backend, frontend, datos e infraestructura</span></div>
+    </section>
+
     <section class="section" id="sobre-mi">
-      <div class="section-heading">
-        <p class="eyebrow">Sobre mí</p>
-        <h2>Tecnología con contexto, usuarios y propósito.</h2>
-      </div>
-      <div class="about-grid">
+      <div class="section-heading split-heading">
         <div>
+          <p class="eyebrow">Perfil</p>
+          <h2>Tecnología con contexto, usuarios y propósito.</h2>
+        </div>
+        <p>
+          Mi diferencial no es solamente programar una solución: también entiendo el proceso,
+          acompaño su adopción y documento las decisiones para que el producto pueda evolucionar.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-copy">
           <p>
-            Soy desarrollador Full Stack y capacitador en tecnología y marketing digital. Me especializo
-            en construir productos orientados a necesidades concretas: plataformas para emprendedores,
-            sistemas de gestión, herramientas de análisis, automatizaciones documentales y aplicaciones educativas.
+            Soy desarrollador Full Stack y capacitador en tecnología de Rosario, Santa Fe. Trabajo
+            principalmente con <strong>Java y Spring Boot</strong> para backend, <strong>React, Next.js y
+            TypeScript</strong> para frontend, y <strong>Python</strong> para automatización, procesamiento
+            documental e inteligencia artificial aplicada.
           </p>
           <p>
-            Mi experiencia en la economía social y la capacitación me permite comprender el proceso antes
-            de escribir código. Busco soluciones que no solo funcionen técnicamente, sino que también puedan
-            ser comprendidas, utilizadas y sostenidas por las personas.
+            Mi experiencia en economía social y alfabetización digital me permite construir con una
+            mirada centrada en las personas: productos claros, accesibles y conectados con necesidades concretas.
           </p>
         </div>
-        <div class="focus-card">
-          <h3>En qué aporto valor</h3>
-          <ul>
-            <li>Diseño y desarrollo de APIs REST</li>
-            <li>Automatización de procesos operativos</li>
-            <li>Aplicaciones local-first y offline</li>
-            <li>Testing, CI/CD y documentación técnica</li>
+
+        <aside class="focus-card">
+          <p class="card-kicker">En qué aporto valor</p>
+          <ul class="check-list">
+            <li>Diseño y desarrollo de APIs REST seguras</li>
+            <li>Productos Full Stack de punta a punta</li>
+            <li>Automatización de procesos y documentos</li>
+            <li>Integración de RAG e IA generativa</li>
+            <li>Testing, CI/CD y despliegue cloud</li>
             <li>Capacitación y adopción tecnológica</li>
           </ul>
-        </div>
+        </aside>
       </div>
     </section>
 
     <section class="section" id="proyectos">
-      <div class="section-heading">
-        <p class="eyebrow">Proyectos destacados</p>
-        <h2>Productos, no ejercicios aislados.</h2>
-        <p>Selección de trabajos que combinan ingeniería, producto y necesidades reales.</p>
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">Proyectos destacados</p>
+          <h2>Evidencia de producto, no ejercicios aislados.</h2>
+        </div>
+        <p>
+          Una selección de proyectos que muestran diferentes partes de mi perfil: IA aplicada,
+          backend, frontend, automatización, testing e infraestructura.
+        </p>
       </div>
 
       <div class="projects-grid">
-        <article class="project-card featured">
-          <div class="project-meta"><span>En uso real</span><span>PWA</span></div>
-          <h3>Herramientas para Emprendedores</h3>
-          <p>Suite gratuita para costos, ventas, marketing, prompts de IA e identidad visual, pensada para emprendedores de la economía social.</p>
-          <ul>
-            <li>Funcionamiento offline e instalación como PWA</li>
-            <li>Persistencia local sin recolectar datos personales</li>
-            <li>Exportaciones PDF, JSON y PNG</li>
-          </ul>
-          <p class="stack">JavaScript · HTML · CSS · Service Workers · Canvas API · Vercel</p>
+        <article class="project-card project-ai project-wide">
+          <div class="project-meta"><span>IA aplicada</span><span>RAG</span><span>En producción</span></div>
+          <div class="project-card-body">
+            <div>
+              <p class="project-number">01 / Proyecto principal</p>
+              <h3>TechRetAI</h3>
+              <p>
+                Asistente corporativo RAG que procesa documentación en ocho formatos, recupera contexto
+                desde ChromaDB y genera respuestas respaldadas por fuentes.
+              </p>
+            </div>
+            <ul>
+              <li>Embeddings y proveedores intercambiables de Gemini y OpenAI</li>
+              <li>Umbral de relevancia, fallback, fuentes, feedback y logs</li>
+              <li>Docker, OCI, Caddy, HTTPS, systemd y despliegue con GitHub Actions</li>
+            </ul>
+          </div>
+          <p class="stack">Python · RAG · Gemini · OpenAI · ChromaDB · Streamlit · OCI</p>
           <div class="project-links">
-            <a href="https://economiasocial.sachadev.me" target="_blank" rel="noopener noreferrer">Ver producto</a>
-            <a href="https://github.com/LeandroMelchiori/herramientas_para_emprendedores" target="_blank" rel="noopener noreferrer">Código</a>
+            <a href="https://techretai.sachadev.me" target="_blank" rel="noopener noreferrer">Ver producto <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/LeandroMelchiori/techretai_asistente_rag_corporativo" target="_blank" rel="noopener noreferrer">Código <span aria-hidden="true">↗</span></a>
           </div>
         </article>
 
-        <article class="project-card featured">
+        <article class="project-card project-featured">
+          <div class="project-meta"><span>Uso real</span><span>PWA</span><span>Privacidad</span></div>
+          <p class="project-number">02</p>
+          <h3>Herramientas para Emprendedores</h3>
+          <p>Suite gratuita para costos, ventas, marketing, prompts de IA e identidad visual, diseñada para emprendedores de la economía social.</p>
+          <ul>
+            <li>Offline e instalable como PWA</li>
+            <li>Datos almacenados localmente</li>
+            <li>Exportaciones PDF, JSON y PNG</li>
+          </ul>
+          <p class="stack">JavaScript · HTML · CSS · Service Workers · Playwright</p>
+          <div class="project-links">
+            <a href="https://economiasocial.sachadev.me" target="_blank" rel="noopener noreferrer">Ver producto <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/LeandroMelchiori/herramientas_para_emprendedores" target="_blank" rel="noopener noreferrer">Código <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card project-featured">
+          <div class="project-meta"><span>Full Stack</span><span>Seguridad</span></div>
+          <p class="project-number">03</p>
+          <h3>LiteraLura</h3>
+          <p>Sistema de gestión bibliotecaria con experiencias diferenciadas para administradores, bibliotecarios y socios.</p>
+          <ul>
+            <li>Catálogo, ejemplares, préstamos, reservas y multas</li>
+            <li>Autenticación JWT y permisos por rol</li>
+            <li>Frontend React y API Spring Boot</li>
+          </ul>
+          <p class="stack">Java · Spring Boot · React · PostgreSQL · Flyway · Docker</p>
+          <div class="project-links">
+            <a href="https://github.com/LeandroMelchiori/literalura" target="_blank" rel="noopener noreferrer">Ver repositorio <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card">
           <div class="project-meta"><span>Backend</span><span>Impacto social</span></div>
+          <p class="project-number">04</p>
           <h3>EcoSocial</h3>
-          <p>Backend para una plataforma que combina catálogo público de emprendimientos y foro comunitario.</p>
+          <p>Backend para una plataforma de economía social que combina catálogo público, perfiles de emprendimientos y foro comunitario.</p>
           <ul>
             <li>JWT, roles y permisos por propiedad</li>
             <li>Productos, imágenes, filtros y paginación</li>
-            <li>Docker, MinIO, Flyway, Swagger y tests</li>
+            <li>MinIO, Flyway, OpenAPI, métricas y tests</li>
           </ul>
-          <p class="stack">Java 17 · Spring Boot · MySQL · Docker · MinIO</p>
+          <p class="stack">Java · Spring Boot · MySQL · Docker · MinIO · Testcontainers</p>
           <div class="project-links">
-            <a href="https://github.com/LeandroMelchiori/EcoSocial-BackEnd" target="_blank" rel="noopener noreferrer">Ver repositorio</a>
+            <a href="https://github.com/LeandroMelchiori/EcoSocial-BackEnd" target="_blank" rel="noopener noreferrer">Ver repositorio <span aria-hidden="true">↗</span></a>
           </div>
         </article>
 
         <article class="project-card">
-          <div class="project-meta"><span>Local-first</span><span>Testing</span></div>
+          <div class="project-meta"><span>Local-first</span><span>Testing</span><span>PWA</span></div>
+          <p class="project-number">05</p>
           <h3>TaskFlow</h3>
-          <p>Gestor de tareas, agenda, recurrencias y tableros con funcionamiento offline y persistencia en IndexedDB.</p>
+          <p>Gestor de tareas y agenda con recurrencias, tableros, calendario, funcionamiento offline y persistencia en IndexedDB.</p>
           <ul>
-            <li>Calendario, agenda semanal y tableros</li>
             <li>Importación y exportación JSON e ICS</li>
-            <li>Vitest, Playwright, Lighthouse y CI</li>
+            <li>Vitest, Playwright y auditorías de accesibilidad</li>
+            <li>CI, Lighthouse y optimización de persistencia</li>
           </ul>
           <p class="stack">React · TypeScript · Vite · IndexedDB · PWA</p>
           <div class="project-links">
-            <a href="https://taskflow.sachadev.me" target="_blank" rel="noopener noreferrer">Ver producto</a>
-            <a href="https://github.com/LeandroMelchiori/React-ToDoList" target="_blank" rel="noopener noreferrer">Código</a>
+            <a href="https://taskflow.sachadev.me" target="_blank" rel="noopener noreferrer">Ver producto <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/LeandroMelchiori/React-ToDoList" target="_blank" rel="noopener noreferrer">Código <span aria-hidden="true">↗</span></a>
           </div>
         </article>
 
         <article class="project-card">
-          <div class="project-meta"><span>Caso de estudio</span><span>Next.js</span></div>
-          <h3>Analizador Banco Solidario</h3>
-          <p>Herramienta para consolidar planillas, normalizar información, detectar inconsistencias y exportar indicadores.</p>
-          <ul>
-            <li>Procesamiento local de Excel y Word</li>
-            <li>Persistencia en IndexedDB</li>
-            <li>Gráficos, tablas, exportaciones y cobertura automatizada</li>
-          </ul>
-          <p class="stack">Next.js · React · TypeScript · SheetJS · Vitest</p>
-          <div class="project-links"><span class="private-label">Repositorio privado</span></div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-meta"><span>Automatización</span><span>Desktop</span></div>
-          <h3>Generador de Certificados</h3>
-          <p>Aplicación para generar, administrar y enviar certificados personalizados a partir de planillas y documentos.</p>
-          <ul>
-            <li>Mapeo dinámico, PDF, folios y QR</li>
-            <li>Gmail OAuth, reintentos y cola persistente</li>
-            <li>SQLite/SQLCipher y backups cifrados</li>
-          </ul>
-          <p class="stack">Python · Tkinter · SQLite · Gmail API · Cryptography</p>
-          <div class="project-links"><span class="private-label">Repositorio privado</span></div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-meta"><span>Backend</span><span>Multi-tenant</span></div>
-          <h3>Pulse Tickets</h3>
-          <p>API para una plataforma de entradas digitales con organizadores, espacios, eventos, staff, checkout y check-in.</p>
-          <ul>
-            <li>Reservas de stock e idempotencia</li>
-            <li>Roles, reembolsos y almacenamiento S3</li>
-            <li>Testcontainers y pruebas de concurrencia</li>
-          </ul>
-          <p class="stack">Java · Spring Boot · PostgreSQL · Testcontainers · S3</p>
-          <div class="project-links"><span class="private-label">Repositorio privado</span></div>
-        </article>
-
-        <article class="project-card">
-          <div class="project-meta"><span>Android</span><span>Proyecto grupal</span></div>
+          <div class="project-meta"><span>Android</span><span>Trabajo en equipo</span></div>
+          <p class="project-number">06</p>
           <h3>Club Deportivo</h3>
-          <p>Aplicación Android para administrar clientes, actividades, horarios, pagos, vencimientos y reportes mensuales.</p>
+          <p>Aplicación Android para gestionar clientes, actividades, horarios, profesores, pagos, vencimientos y reportes mensuales.</p>
+          <ul>
+            <li>Gestión de socios y no socios</li>
+            <li>Pagos por cuota y actividad</li>
+            <li>Persistencia local con SQLite</li>
+          </ul>
           <p class="stack">Kotlin · Android SDK · SQLite · Material Design</p>
           <div class="project-links">
-            <a href="https://github.com/UnknowTeam-TSDS/app_ClubDeportivo" target="_blank" rel="noopener noreferrer">Ver repositorio</a>
+            <a href="https://github.com/UnknowTeam-TSDS/app_ClubDeportivo" target="_blank" rel="noopener noreferrer">Ver repositorio <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="case-studies">
+        <div class="case-studies-heading">
+          <p class="eyebrow">Casos de estudio privados</p>
+          <h3>Soluciones construidas para procesos operativos concretos.</h3>
+        </div>
+        <div class="case-grid">
+          <article>
+            <span>Datos y gestión</span>
+            <h4>Analizador Banco Solidario</h4>
+            <p>Consolida Excel y Word, normaliza información, detecta inconsistencias y genera indicadores y exportaciones.</p>
+          </article>
+          <article>
+            <span>Automatización documental</span>
+            <h4>Generador de Certificados</h4>
+            <p>Genera certificados personalizados y automatiza administración, trazabilidad y envíos mediante Gmail.</p>
+          </article>
+          <article>
+            <span>Backend multi-tenant</span>
+            <h4>Pulse Tickets</h4>
+            <p>Gestiona eventos, stock, checkout idempotente, reembolsos, entradas digitales y check-in.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experiencia">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">Experiencia</p>
+          <h2>Desarrollo, capacitación y transformación digital.</h2>
+        </div>
+        <p>
+          Mi recorrido combina construcción de software con acompañamiento a personas y organizaciones
+          que necesitan incorporar tecnología de manera práctica.
+        </p>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-date">Actualidad</div>
+          <div class="timeline-content">
+            <h3>Capacitador y Asistente Técnico</h3>
+            <p class="timeline-place">Economía Social y Transformación Digital · Gobierno de Santa Fe</p>
+            <p>Diseño de herramientas, automatización de procesos, asistencia técnica y capacitaciones para emprendedores y equipos territoriales.</p>
           </div>
         </article>
 
-        <article class="project-card">
-          <div class="project-meta"><span>Full Stack</span><span>Biblioteca</span></div>
-          <h3>LiteraLura</h3>
-          <p>Sistema de biblioteca con catálogo, socios, préstamos, multas, reservas y autorización por roles.</p>
-          <p class="stack">Java · Spring Boot · PostgreSQL · React · Docker</p>
-          <div class="project-links">
-            <a href="https://github.com/LeandroMelchiori/literalura" target="_blank" rel="noopener noreferrer">Ver repositorio</a>
+        <article class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-date">Actualidad</div>
+          <div class="timeline-content">
+            <h3>Instructor de Alfabetización Digital y Tecnología Educativa</h3>
+            <p class="timeline-place">Centro Cultural de General Lagos</p>
+            <p>Diseño y coordinación de experiencias educativas orientadas a resolución de problemas, pensamiento lógico y trabajo colaborativo.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-date">En formación</div>
+          <div class="timeline-content">
+            <h3>Desarrollo de Software e Inteligencia Artificial</h3>
+            <p class="timeline-place">IFTS N.º 29 · Oracle Next Education / Tech AI Builder</p>
+            <p>Profundización en arquitectura de software, testing, agentes, RAG, automatización e infraestructura cloud.</p>
           </div>
         </article>
       </div>
     </section>
 
     <section class="section" id="tecnologias">
-      <div class="section-heading">
-        <p class="eyebrow">Tecnologías</p>
-        <h2>Herramientas demostradas en proyectos.</h2>
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">Stack</p>
+          <h2>Tecnologías respaldadas por proyectos.</h2>
+        </div>
+        <p>No presento una colección de logos: cada herramienta listada aparece en productos o casos de estudio concretos.</p>
       </div>
+
       <div class="tech-grid">
-        <article><h3>Backend</h3><p>Java, Spring Boot, Spring Security, JPA, Hibernate, JWT, Flyway, JUnit, Mockito y Testcontainers.</p></article>
-        <article><h3>Frontend</h3><p>React, Next.js, TypeScript, JavaScript, HTML, CSS, IndexedDB, PWA, Vitest y Playwright.</p></article>
-        <article><h3>Datos y automatización</h3><p>Python, SQLite, PostgreSQL, MySQL, MongoDB, Excel, procesamiento de documentos, PDF y Gmail API.</p></article>
-        <article><h3>Infraestructura</h3><p>Git, GitHub Actions, Docker, Vercel, Render, MinIO y almacenamiento compatible con S3.</p></article>
+        <article>
+          <div class="tech-icon">BE</div>
+          <h3>Backend</h3>
+          <p>Java, Spring Boot, Spring Security, JPA, Hibernate, JWT, Flyway, REST, JUnit, Mockito y Testcontainers.</p>
+        </article>
+        <article>
+          <div class="tech-icon">FE</div>
+          <h3>Frontend</h3>
+          <p>React, Next.js, TypeScript, JavaScript, HTML, CSS, IndexedDB, PWA, Vitest y Playwright.</p>
+        </article>
+        <article>
+          <div class="tech-icon">AI</div>
+          <h3>IA y automatización</h3>
+          <p>Python, RAG, Gemini, OpenAI, embeddings, ChromaDB, Streamlit, Excel, documentos, PDF y Gmail API.</p>
+        </article>
+        <article>
+          <div class="tech-icon">OP</div>
+          <h3>Infraestructura y calidad</h3>
+          <p>Git, GitHub Actions, Docker, OCI, Vercel, Render, Caddy, MinIO, S3, CI/CD y observabilidad.</p>
+        </article>
       </div>
     </section>
 
     <section class="section contact" id="contacto">
-      <p class="eyebrow">Contacto</p>
-      <h2>¿Tenés un proyecto o un proceso que podría mejorar con tecnología?</h2>
-      <p>Podés escribirme por LinkedIn o correo electrónico.</p>
-      <div class="hero-actions">
-        <a class="button primary" href="mailto:leandromelchiori@gmail.com">Enviar email</a>
-        <a class="button secondary" href="https://www.linkedin.com/in/leandromelchiori-developer/" target="_blank" rel="noopener noreferrer">Ver LinkedIn</a>
-        <a class="button secondary" href="https://github.com/LeandroMelchiori" target="_blank" rel="noopener noreferrer">Ver GitHub</a>
+      <div class="contact-inner">
+        <p class="eyebrow">Contacto</p>
+        <h2>¿Hay un proceso que podría convertirse en un mejor producto digital?</h2>
+        <p>
+          Estoy abierto a conversar sobre oportunidades en desarrollo backend, Full Stack,
+          automatización, inteligencia artificial aplicada y transformación digital.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="mailto:leandromelchiori@gmail.com">Enviar email</a>
+          <a class="button secondary" href="https://www.linkedin.com/in/leandromelchiori-developer/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="button secondary" href="https://github.com/LeandroMelchiori" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© <span id="year"></span> Leandro Melchiori · Rosario, Santa Fe, Argentina</p>
+    <p>© <span id="year"></span> Leandro Melchiori</p>
+    <p>Rosario, Santa Fe, Argentina · Construido con HTML y CSS.</p>
   </footer>
 
   <script>
