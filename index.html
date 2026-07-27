@@ -21,6 +21,123 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 
+  <style>
+    .case-studies-heading {
+      align-items: start;
+    }
+
+    .case-studies-intro {
+      max-width: 720px;
+      margin: .75rem 0 0;
+      color: var(--muted);
+    }
+
+    .case-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .case-grid article {
+      position: relative;
+      overflow: hidden;
+      padding: clamp(1.4rem, 3vw, 2rem);
+      background:
+        radial-gradient(circle at 95% 0%, rgba(94, 224, 194, .08), transparent 22rem),
+        linear-gradient(145deg, rgba(21, 31, 49, .88), rgba(12, 18, 29, .96));
+    }
+
+    .case-grid article::after {
+      content: attr(data-case-number);
+      position: absolute;
+      right: 1rem;
+      top: .2rem;
+      color: rgba(154, 168, 255, .045);
+      font: 800 clamp(5rem, 15vw, 9rem)/1 Inter, sans-serif;
+      pointer-events: none;
+    }
+
+    .case-topline {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .case-private {
+      padding: .3rem .6rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--primary-strong) !important;
+      background: rgba(154, 168, 255, .06);
+    }
+
+    .case-grid h4 {
+      position: relative;
+      z-index: 1;
+      max-width: 850px;
+      margin: 0 0 .75rem;
+      font-size: clamp(1.45rem, 3vw, 2rem);
+      line-height: 1.15;
+    }
+
+    .case-summary {
+      position: relative;
+      z-index: 1;
+      max-width: 920px;
+      margin: 0 0 1.5rem !important;
+      color: var(--text) !important;
+      font-size: 1rem !important;
+    }
+
+    .case-story {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: .9rem;
+    }
+
+    .case-story section {
+      padding: 1rem;
+      border: 1px solid var(--border-soft);
+      border-radius: 14px;
+      background: rgba(7, 10, 17, .34);
+    }
+
+    .case-story h5 {
+      margin: 0 0 .55rem;
+      color: var(--accent);
+      font: 600 .7rem "JetBrains Mono", monospace;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .case-story p {
+      margin: 0;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .case-stack {
+      position: relative;
+      z-index: 1;
+      margin: 1.25rem 0 0 !important;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border-soft);
+      color: var(--primary-strong) !important;
+      font: 500 .72rem/1.7 "JetBrains Mono", monospace !important;
+    }
+
+    @media (max-width: 820px) {
+      .case-story {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -169,10 +286,7 @@
             <div>
               <p class="project-number">01 / Proyecto principal</p>
               <h3>TechRetAI</h3>
-              <p>
-                Asistente corporativo RAG que procesa documentación en ocho formatos, recupera contexto
-                desde ChromaDB y genera respuestas respaldadas por fuentes.
-              </p>
+              <p>Asistente corporativo RAG que procesa documentación en ocho formatos, recupera contexto desde ChromaDB y genera respuestas respaldadas por fuentes.</p>
             </div>
             <ul>
               <li>Embeddings y proveedores intercambiables de Gemini y OpenAI</li>
@@ -272,24 +386,93 @@
 
       <div class="case-studies">
         <div class="case-studies-heading">
-          <p class="eyebrow">Casos de estudio privados</p>
-          <h3>Soluciones construidas para procesos operativos concretos.</h3>
+          <div>
+            <p class="eyebrow">Casos de estudio privados</p>
+            <h3>Automatizaciones que reemplazan tareas manuales y sostienen operaciones completas.</h3>
+            <p class="case-studies-intro">
+              El código no es público porque estas soluciones trabajan con procesos internos y datos sensibles.
+              Por eso, cada caso se presenta desde el problema que resuelve, el sistema construido y su impacto operativo.
+            </p>
+          </div>
         </div>
+
         <div class="case-grid">
-          <article>
-            <span>Datos y gestión</span>
-            <h4>Analizador Banco Solidario</h4>
-            <p>Consolida Excel y Word, normaliza información, detecta inconsistencias y genera indicadores y exportaciones.</p>
+          <article data-case-number="01">
+            <div class="case-topline">
+              <span>Datos · Estadística · Privacidad</span>
+              <span class="case-private">Caso privado</span>
+            </div>
+            <h4>Observatorio de Datos Banco Solidario</h4>
+            <p class="case-summary">
+              Convierte planillas dispersas de gestión territorial en una base confiable y en reportes estadísticos automáticos para comprender el alcance, las características y las necesidades de los emprendimientos acompañados.
+            </p>
+            <div class="case-story">
+              <section>
+                <h5>Problema</h5>
+                <p>La información llegaba en múltiples Excel y documentos Word, con formatos diferentes, categorías escritas de distintas maneras, registros duplicados y datos que requerían revisión manual antes de producir cualquier informe.</p>
+              </section>
+              <section>
+                <h5>Solución</h5>
+                <p>La aplicación importa varios archivos, normaliza rubros, edades, antigüedad, formalización y capacitaciones, consolida los registros, detecta inconsistencias y conserva la trazabilidad del archivo y la hoja de origen.</p>
+              </section>
+              <section>
+                <h5>Impacto</h5>
+                <p>Calcula automáticamente indicadores, distribuciones, comparaciones, tablas y gráficos; permite filtrar resultados y exportar reportes en Excel, CSV y PNG sin enviar documentos sensibles a un servidor.</p>
+              </section>
+            </div>
+            <p class="case-stack">Next.js · React · TypeScript · SheetJS · Mammoth · IndexedDB · Vitest</p>
           </article>
-          <article>
-            <span>Automatización documental</span>
-            <h4>Generador de Certificados</h4>
-            <p>Genera certificados personalizados y automatiza administración, trazabilidad y envíos mediante Gmail.</p>
+
+          <article data-case-number="02">
+            <div class="case-topline">
+              <span>Automatización documental · Gestión de asistentes</span>
+              <span class="case-private">Caso privado</span>
+            </div>
+            <h4>Gestión Integral de Talleres y Certificaciones</h4>
+            <p class="case-summary">
+              Centraliza el recorrido completo de una actividad formativa: registro de asistentes, validación de datos, generación personalizada de certificados, historial y envío automatizado de comunicaciones.
+            </p>
+            <div class="case-story">
+              <section>
+                <h5>Problema</h5>
+                <p>Crear certificados uno por uno, mantener listados de participantes, corregir nombres o correos y enviar mensajes personalizados implicaba repetir tareas, alternar entre planillas y documentos, y asumir un alto riesgo de errores u omisiones.</p>
+              </section>
+              <section>
+                <h5>Solución</h5>
+                <p>El sistema carga participantes desde Excel, Word o PDF, detecta duplicados y columnas incorrectas, mantiene una base de asistentes, genera certificados desde plantillas configurables y permite incorporar folios y códigos QR.</p>
+              </section>
+              <section>
+                <h5>Impacto</h5>
+                <p>Automatiza correos mediante plantillas personalizadas y Gmail OAuth, administra colas, pausas, reintentos, rebotes, correcciones y reenvíos. Un proceso manual fragmentado pasa a ser guiado, trazable y reutilizable.</p>
+              </section>
+            </div>
+            <p class="case-stack">Python · Tkinter · SQLite/SQLCipher · PDF · Gmail API · OAuth · QR</p>
           </article>
-          <article>
-            <span>Backend multi-tenant</span>
-            <h4>Pulse Tickets</h4>
-            <p>Gestiona eventos, stock, checkout idempotente, reembolsos, entradas digitales y check-in.</p>
+
+          <article data-case-number="03">
+            <div class="case-topline">
+              <span>Backend multi-tenant · Ticketing · Operación</span>
+              <span class="case-private">Caso privado</span>
+            </div>
+            <h4>Pulse — Gestión Integral de Eventos y Ticketing</h4>
+            <p class="case-summary">
+              Diseña la infraestructura de una plataforma para que productoras, clubes, teatros y festivales puedan administrar la operación completa de sus eventos, desde la publicación hasta el ingreso del público.
+            </p>
+            <div class="case-story">
+              <section>
+                <h5>Problema</h5>
+                <p>La organización de eventos suele repartir datos entre formularios, planillas, sistemas de cobro y controles de puerta, dificultando conocer el stock real, coordinar al personal y mantener trazabilidad sobre compras, entradas y devoluciones.</p>
+              </section>
+              <section>
+                <h5>Solución</h5>
+                <p>La API separa la información por organizador y permite gestionar espacios, eventos, tipos de entrada, preventas, staff, compradores, cortesías y comunicaciones. El checkout usa idempotencia y reservas atómicas para evitar operaciones duplicadas y sobreventa.</p>
+              </section>
+              <section>
+                <h5>Impacto</h5>
+                <p>Integra emisión de entradas digitales, billetera del comprador, reembolsos, recuperación de stock y check-in con permisos de puerta, además de paneles para organizadores y administración central.</p>
+              </section>
+            </div>
+            <p class="case-stack">Java · Spring Boot · PostgreSQL · JWT · Flyway · Testcontainers · S3 · Resend</p>
           </article>
         </div>
       </div>
@@ -301,10 +484,7 @@
           <p class="eyebrow">Experiencia</p>
           <h2>Desarrollo, capacitación y transformación digital.</h2>
         </div>
-        <p>
-          Mi recorrido combina construcción de software con acompañamiento a personas y organizaciones
-          que necesitan incorporar tecnología de manera práctica.
-        </p>
+        <p>Mi recorrido combina construcción de software con acompañamiento a personas y organizaciones que necesitan incorporar tecnología de manera práctica.</p>
       </div>
 
       <div class="timeline">
@@ -350,26 +530,10 @@
       </div>
 
       <div class="tech-grid">
-        <article>
-          <div class="tech-icon">BE</div>
-          <h3>Backend</h3>
-          <p>Java, Spring Boot, Spring Security, JPA, Hibernate, JWT, Flyway, REST, JUnit, Mockito y Testcontainers.</p>
-        </article>
-        <article>
-          <div class="tech-icon">FE</div>
-          <h3>Frontend</h3>
-          <p>React, Next.js, TypeScript, JavaScript, HTML, CSS, IndexedDB, PWA, Vitest y Playwright.</p>
-        </article>
-        <article>
-          <div class="tech-icon">AI</div>
-          <h3>IA y automatización</h3>
-          <p>Python, RAG, Gemini, OpenAI, embeddings, ChromaDB, Streamlit, Excel, documentos, PDF y Gmail API.</p>
-        </article>
-        <article>
-          <div class="tech-icon">OP</div>
-          <h3>Infraestructura y calidad</h3>
-          <p>Git, GitHub Actions, Docker, OCI, Vercel, Render, Caddy, MinIO, S3, CI/CD y observabilidad.</p>
-        </article>
+        <article><div class="tech-icon">BE</div><h3>Backend</h3><p>Java, Spring Boot, Spring Security, JPA, Hibernate, JWT, Flyway, REST, JUnit, Mockito y Testcontainers.</p></article>
+        <article><div class="tech-icon">FE</div><h3>Frontend</h3><p>React, Next.js, TypeScript, JavaScript, HTML, CSS, IndexedDB, PWA, Vitest y Playwright.</p></article>
+        <article><div class="tech-icon">AI</div><h3>IA y automatización</h3><p>Python, RAG, Gemini, OpenAI, embeddings, ChromaDB, Streamlit, Excel, documentos, PDF y Gmail API.</p></article>
+        <article><div class="tech-icon">OP</div><h3>Infraestructura y calidad</h3><p>Git, GitHub Actions, Docker, OCI, Vercel, Render, Caddy, MinIO, S3, CI/CD y observabilidad.</p></article>
       </div>
     </section>
 
@@ -377,10 +541,7 @@
       <div class="contact-inner">
         <p class="eyebrow">Contacto</p>
         <h2>¿Hay un proceso que podría convertirse en un mejor producto digital?</h2>
-        <p>
-          Estoy abierto a conversar sobre oportunidades en desarrollo backend, Full Stack,
-          automatización, inteligencia artificial aplicada y transformación digital.
-        </p>
+        <p>Estoy abierto a conversar sobre oportunidades en desarrollo backend, Full Stack, automatización, inteligencia artificial aplicada y transformación digital.</p>
         <div class="hero-actions">
           <a class="button primary" href="mailto:leandromelchiori@gmail.com">Enviar email</a>
           <a class="button secondary" href="https://www.linkedin.com/in/leandromelchiori-developer/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
