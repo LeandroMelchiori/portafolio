@@ -32,7 +32,7 @@ Los proyectos privados se presentan mediante el problema, la solución y el impa
 
 - **Observatorio de Datos Banco Solidario:** consolida Excel y Word, normaliza la información, detecta inconsistencias y produce automáticamente indicadores, tablas, gráficos y reportes estadísticos exportables.
 - **Gestión Integral de Talleres y Certificaciones:** administra asistentes y tandas, valida fuentes de datos, genera certificados personalizados y automatiza correos, plantillas, colas, reintentos, rebotes y reenvíos.
-- **Pulse — Gestión Integral de Eventos y Ticketing:** modela la operación de organizadores, espacios y eventos mediante stock atómico, checkout idempotente, entradas digitales, reembolsos, staff y check-in.
+- **Pulse — Gestión Integral de Eventos y Ticketing:** modela la operación de organizadores, espacios y eventos mediante stock atómico, checkout idempotente, entradas digitales, reembolsos, staff y check-in. La API pública utiliza Cloudflare como capa perimetral con proxy, SSL/TLS, WAF, rate limiting y mitigación DDoS; el origen en Render valida tráfico proveniente de Cloudflare mediante un guard de origen y el backend conserva la IP real del cliente para aplicar correctamente los límites de solicitudes.
 
 ## Mejoras de esta versión
 
@@ -44,7 +44,8 @@ Los proyectos privados se presentan mediante el problema, la solución y el impa
 - Añade una sección de experiencia profesional y formación actual.
 - Actualiza LiteraLura a su alcance Full Stack real.
 - Refuerza el posicionamiento en automatización, RAG e infraestructura.
-- Documenta Cloudflare para DNS, proxy del tráfico, SSL/TLS y Transform Rules aplicadas a servicios publicados.
+- Documenta Cloudflare para DNS, proxy del tráfico, SSL/TLS, Transform Rules, WAF, rate limiting y mitigación DDoS.
+- Documenta la protección del origen de Pulse en Render y el uso de la IP real del cliente detrás del proxy para el rate limiter.
 - Mejora la experiencia responsive sin ocultar la navegación móvil.
 - Incorpora metadatos SEO, Open Graph, URL canónica y datos estructurados.
 - Mantiene navegación semántica, foco visible, skip link y reducción de movimiento.
@@ -57,7 +58,7 @@ Los proyectos privados se presentan mediante el problema, la solución y el impa
 
 **IA y automatización:** Python, RAG, Gemini, OpenAI, embeddings, ChromaDB, Streamlit, Excel, procesamiento de documentos, PDF y Gmail API.
 
-**Infraestructura:** Git, GitHub Actions, Docker, OCI, Vercel, Render, Caddy, Cloudflare (DNS, proxy, SSL/TLS y Transform Rules), MinIO y almacenamiento compatible con S3.
+**Infraestructura:** Git, GitHub Actions, Docker, OCI, Vercel, Render, Caddy, Cloudflare (DNS, proxy, SSL/TLS, Transform Rules, WAF, rate limiting y mitigación DDoS), MinIO y almacenamiento compatible con S3.
 
 ## Estructura
 
