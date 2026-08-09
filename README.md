@@ -24,7 +24,7 @@ El portafolio presenta un perfil **Full Stack** con foco en:
 3. **LiteraLura:** sistema Full Stack de gestión bibliotecaria.
 4. **EcoSocial:** backend para catálogo y comunidad de economía social.
 5. **TaskFlow:** gestor local-first de tareas y agenda.
-6. **Club Deportivo:** aplicación Android de gestión desarrollada en equipo.
+6. **Club Deportivo:** aplicación Android de gestión integral para clubes, con clientes unificados, socios, actividades, profesores, horarios, cuotas, pagos, vencimientos y resumen mensual de ingresos. El código público se encuentra actualmente en [`LeandroMelchiori/App_Clubdeportivo`](https://github.com/LeandroMelchiori/App_Clubdeportivo).
 
 ## Casos de estudio privados
 
@@ -40,9 +40,11 @@ Los proyectos privados se presentan mediante el problema, la solución y el impa
 - Jerarquiza los proyectos según impacto, alcance y disponibilidad pública.
 - Presenta los casos privados como historias de problema, solución e impacto.
 - Renombra los casos privados según el alcance real de cada producto.
+- Actualiza Club Deportivo a su repositorio personal y documenta sus mejoras de gestión y reportes.
 - Añade una sección de experiencia profesional y formación actual.
 - Actualiza LiteraLura a su alcance Full Stack real.
 - Refuerza el posicionamiento en automatización, RAG e infraestructura.
+- Añade Cloudflare DNS como parte de la gestión actual de dominios.
 - Mejora la experiencia responsive sin ocultar la navegación móvil.
 - Incorpora metadatos SEO, Open Graph, URL canónica y datos estructurados.
 - Mantiene navegación semántica, foco visible, skip link y reducción de movimiento.
@@ -55,7 +57,7 @@ Los proyectos privados se presentan mediante el problema, la solución y el impa
 
 **IA y automatización:** Python, RAG, Gemini, OpenAI, embeddings, ChromaDB, Streamlit, Excel, procesamiento de documentos, PDF y Gmail API.
 
-**Infraestructura:** Git, GitHub Actions, Docker, OCI, Vercel, Render, Caddy, MinIO y almacenamiento compatible con S3.
+**Infraestructura:** Git, GitHub Actions, Docker, OCI, Vercel, Render, Caddy, Cloudflare DNS, MinIO y almacenamiento compatible con S3.
 
 ## Estructura
 
