@@ -44,7 +44,7 @@ Los proyectos privados se presentan mediante el problema, la solución y el impa
 - Añade una sección de experiencia profesional y formación actual.
 - Actualiza LiteraLura a su alcance Full Stack real.
 - Refuerza el posicionamiento en automatización, RAG e infraestructura.
-- Añade Cloudflare DNS como parte de la gestión actual de dominios.
+- Documenta Cloudflare para DNS, proxy del tráfico, SSL/TLS y Transform Rules aplicadas a servicios publicados.
 - Mejora la experiencia responsive sin ocultar la navegación móvil.
 - Incorpora metadatos SEO, Open Graph, URL canónica y datos estructurados.
 - Mantiene navegación semántica, foco visible, skip link y reducción de movimiento.
@@ -57,7 +57,7 @@ Los proyectos privados se presentan mediante el problema, la solución y el impa
 
 **IA y automatización:** Python, RAG, Gemini, OpenAI, embeddings, ChromaDB, Streamlit, Excel, procesamiento de documentos, PDF y Gmail API.
 
-**Infraestructura:** Git, GitHub Actions, Docker, OCI, Vercel, Render, Caddy, Cloudflare DNS, MinIO y almacenamiento compatible con S3.
+**Infraestructura:** Git, GitHub Actions, Docker, OCI, Vercel, Render, Caddy, Cloudflare (DNS, proxy, SSL/TLS y Transform Rules), MinIO y almacenamiento compatible con S3.
 
 ## Estructura
 
