@@ -32,7 +32,7 @@ Los proyectos privados se presentan mediante el problema, la solución y el impa
 
 - **Observatorio de Datos Banco Solidario:** consolida Excel y Word, normaliza la información, detecta inconsistencias y produce automáticamente indicadores, tablas, gráficos y reportes estadísticos exportables.
 - **Gestión Integral de Talleres y Certificaciones:** administra asistentes y tandas, valida fuentes de datos, genera certificados personalizados y automatiza correos, plantillas, colas, reintentos, rebotes y reenvíos.
-- **Pulse — Gestión Integral de Eventos y Ticketing:** modela la operación de organizadores, espacios y eventos mediante stock atómico, checkout idempotente, entradas digitales, reembolsos, staff y check-in. La API pública utiliza Cloudflare como capa perimetral con proxy, SSL/TLS, WAF, rate limiting y mitigación DDoS; el origen en Render valida tráfico proveniente de Cloudflare mediante un guard de origen y el backend conserva la IP real del cliente para aplicar correctamente los límites de solicitudes.
+- **Pulse — Plataforma Transaccional de Eventos y Ticketing:** backend multi-tenant que modela la operación completa de productoras, clubes, teatros y festivales. Implementa stock atómico, checkout idempotente, Mercado Pago Marketplace con OAuth de vendedores, split de comisión, webhooks firmados y reembolsos, emisión de entradas, billetera del comprador, staff, RBAC administrativo, OTP, emails transaccionales y check-in. La API pública opera detrás de Cloudflare con SSL/TLS, WAF, rate limiting, mitigación DDoS y guard de origen hacia Render.
 
 ## Mejoras de esta versión
 
@@ -44,6 +44,7 @@ Los proyectos privados se presentan mediante el problema, la solución y el impa
 - Añade una sección de experiencia profesional y formación actual.
 - Actualiza LiteraLura a su alcance Full Stack real.
 - Refuerza el posicionamiento en automatización, RAG e infraestructura.
+- Actualiza Pulse al alcance transaccional actual: Mercado Pago Marketplace, OAuth, webhooks, refunds, seguridad, RBAC e infraestructura de borde.
 - Documenta Cloudflare para DNS, proxy del tráfico, SSL/TLS, Transform Rules, WAF, rate limiting y mitigación DDoS.
 - Documenta la protección del origen de Pulse en Render y el uso de la IP real del cliente detrás del proxy para el rate limiter.
 - Mejora la experiencia responsive sin ocultar la navegación móvil.
