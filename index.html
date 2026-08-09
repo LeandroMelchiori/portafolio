@@ -22,20 +22,9 @@
   <link rel="stylesheet" href="css/styles.css" />
 
   <style>
-    .case-studies-heading {
-      align-items: start;
-    }
-
-    .case-studies-intro {
-      max-width: 720px;
-      margin: .75rem 0 0;
-      color: var(--muted);
-    }
-
-    .case-grid {
-      grid-template-columns: 1fr;
-    }
-
+    .case-studies-heading { align-items: start; }
+    .case-studies-intro { max-width: 720px; margin: .75rem 0 0; color: var(--muted); }
+    .case-grid { grid-template-columns: 1fr; }
     .case-grid article {
       position: relative;
       overflow: hidden;
@@ -44,7 +33,6 @@
         radial-gradient(circle at 95% 0%, rgba(94, 224, 194, .08), transparent 22rem),
         linear-gradient(145deg, rgba(21, 31, 49, .88), rgba(12, 18, 29, .96));
     }
-
     .case-grid article::after {
       content: attr(data-case-number);
       position: absolute;
@@ -54,7 +42,6 @@
       font: 800 clamp(5rem, 15vw, 9rem)/1 Inter, sans-serif;
       pointer-events: none;
     }
-
     .case-topline {
       position: relative;
       z-index: 1;
@@ -65,7 +52,6 @@
       align-items: center;
       margin-bottom: 1rem;
     }
-
     .case-private {
       padding: .3rem .6rem;
       border: 1px solid var(--border);
@@ -73,7 +59,6 @@
       color: var(--primary-strong) !important;
       background: rgba(154, 168, 255, .06);
     }
-
     .case-grid h4 {
       position: relative;
       z-index: 1;
@@ -82,7 +67,6 @@
       font-size: clamp(1.45rem, 3vw, 2rem);
       line-height: 1.15;
     }
-
     .case-summary {
       position: relative;
       z-index: 1;
@@ -91,7 +75,6 @@
       color: var(--text) !important;
       font-size: 1rem !important;
     }
-
     .case-story {
       position: relative;
       z-index: 1;
@@ -99,14 +82,12 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: .9rem;
     }
-
     .case-story section {
       padding: 1rem;
       border: 1px solid var(--border-soft);
       border-radius: 14px;
       background: rgba(7, 10, 17, .34);
     }
-
     .case-story h5 {
       margin: 0 0 .55rem;
       color: var(--accent);
@@ -114,13 +95,7 @@
       letter-spacing: .08em;
       text-transform: uppercase;
     }
-
-    .case-story p {
-      margin: 0;
-      color: var(--muted);
-      font-size: .9rem;
-    }
-
+    .case-story p { margin: 0; color: var(--muted); font-size: .9rem; }
     .case-stack {
       position: relative;
       z-index: 1;
@@ -130,12 +105,7 @@
       color: var(--primary-strong) !important;
       font: 500 .72rem/1.7 "JetBrains Mono", monospace !important;
     }
-
-    @media (max-width: 820px) {
-      .case-story {
-        grid-template-columns: 1fr;
-      }
-    }
+    @media (max-width: 820px) { .case-story { grid-template-columns: 1fr; } }
   </style>
 
   <script type="application/ld+json">
@@ -157,7 +127,8 @@
       "TypeScript",
       "Python",
       "Automatización",
-      "Retrieval-Augmented Generation"
+      "Retrieval-Augmented Generation",
+      "Cloudflare DNS"
     ]
   }
   </script>
@@ -368,18 +339,18 @@
         </article>
 
         <article class="project-card">
-          <div class="project-meta"><span>Android</span><span>Trabajo en equipo</span></div>
+          <div class="project-meta"><span>Android</span><span>Gestión integral</span><span>SQLite</span></div>
           <p class="project-number">06</p>
           <h3>Club Deportivo</h3>
-          <p>Aplicación Android para gestionar clientes, actividades, horarios, profesores, pagos, vencimientos y reportes mensuales.</p>
+          <p>Aplicación Android para centralizar la operación cotidiana de un club: clientes, socios, actividades, profesores, horarios, cuotas, cobros y seguimiento de vencimientos.</p>
           <ul>
-            <li>Gestión de socios y no socios</li>
-            <li>Pagos por cuota y actividad</li>
-            <li>Persistencia local con SQLite</li>
+            <li>Modelo unificado de clientes con estado de socio, ficha médica y carnet</li>
+            <li>Cuotas y pagos de actividades con distintos medios de pago y control de vencimientos</li>
+            <li>Resumen mensual de socios, no socios e ingresos por cuotas y actividades</li>
           </ul>
           <p class="stack">Kotlin · Android SDK · SQLite · Material Design</p>
           <div class="project-links">
-            <a href="https://github.com/UnknowTeam-TSDS/app_ClubDeportivo" target="_blank" rel="noopener noreferrer">Ver repositorio <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/LeandroMelchiori/App_Clubdeportivo" target="_blank" rel="noopener noreferrer">Ver repositorio <span aria-hidden="true">↗</span></a>
           </div>
         </article>
       </div>
@@ -533,7 +504,7 @@
         <article><div class="tech-icon">BE</div><h3>Backend</h3><p>Java, Spring Boot, Spring Security, JPA, Hibernate, JWT, Flyway, REST, JUnit, Mockito y Testcontainers.</p></article>
         <article><div class="tech-icon">FE</div><h3>Frontend</h3><p>React, Next.js, TypeScript, JavaScript, HTML, CSS, IndexedDB, PWA, Vitest y Playwright.</p></article>
         <article><div class="tech-icon">AI</div><h3>IA y automatización</h3><p>Python, RAG, Gemini, OpenAI, embeddings, ChromaDB, Streamlit, Excel, documentos, PDF y Gmail API.</p></article>
-        <article><div class="tech-icon">OP</div><h3>Infraestructura y calidad</h3><p>Git, GitHub Actions, Docker, OCI, Vercel, Render, Caddy, MinIO, S3, CI/CD y observabilidad.</p></article>
+        <article><div class="tech-icon">OP</div><h3>Infraestructura y calidad</h3><p>Git, GitHub Actions, Docker, OCI, Vercel, Render, Caddy, Cloudflare DNS, MinIO, S3, CI/CD y observabilidad.</p></article>
       </div>
     </section>
 
