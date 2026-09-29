@@ -3,19 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portafolio de Leandro Melchiori, Software Developer con foco en backend, AI Engineering y automatización. Java, Spring Boot, Python, React, RAG, Docker, Terraform y OCI." />
+  <meta name="description" content="Portafolio de Leandro Melchiori, desarrollador backend e IA aplicada: agentes, RAG e integración de LLMs. Python, FastAPI, Java, Spring Boot, n8n, Docker y OCI." />
   <meta name="theme-color" content="#080b12" />
   <meta name="color-scheme" content="dark" />
 
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="es_AR" />
-  <meta property="og:title" content="Leandro Melchiori | Software Developer" />
-  <meta property="og:description" content="Backend, AI Engineering y automatización con Java, Spring Boot, Python, RAG, Docker y Terraform." />
+  <meta property="og:title" content="Leandro Melchiori | Backend & AI Developer" />
+  <meta property="og:description" content="Backend e IA aplicada: agentes, RAG e integración de LLMs con Python, Java/Spring Boot, n8n, Docker y OCI. Herramientas en uso por miles de personas." />
   <meta property="og:url" content="https://www.sachadev.me/" />
   <meta name="twitter:card" content="summary" />
 
   <link rel="canonical" href="https://www.sachadev.me/" />
-  <title>Leandro Melchiori | Backend, AI Engineering & Automation</title>
+  <title>Leandro Melchiori | Backend & AI Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet" />
@@ -118,12 +118,27 @@
       "https://github.com/LeandroMelchiori",
       "https://www.linkedin.com/in/leandromelchiori-developer/"
     ],
-    "jobTitle": "Software Developer",
+    "jobTitle": "Backend & AI Developer",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Rosario",
+      "addressRegion": "Santa Fe",
+      "addressCountry": "AR"
+    },
+    "hasCredential": {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Oracle Cloud Infrastructure Certified AI Foundations Associate",
+      "recognizedBy": { "@type": "Organization", "name": "Oracle" }
+    },
     "knowsAbout": [
+      "Python",
+      "FastAPI",
       "Java",
       "Spring Boot",
       "Spring Security",
-      "Python",
+      "Large Language Models",
+      "n8n",
+      "ChromaDB",
       "React",
       "TypeScript",
       "Retrieval-Augmented Generation",
@@ -149,6 +164,7 @@
       <a href="#sobre-mi">Perfil</a>
       <a href="#proyectos">Proyectos</a>
       <a href="#experiencia">Experiencia</a>
+      <a href="#formacion">Formación</a>
       <a href="#tecnologias">Stack</a>
       <a href="#contacto">Contacto</a>
     </nav>
@@ -158,12 +174,12 @@
   <main id="contenido">
     <section class="hero" id="inicio">
       <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> Software Developer · Backend · AI Engineering · Automation</p>
+        <p class="eyebrow"><span class="status-dot"></span> Backend & AI Developer · OCI AI Certified · Rosario, Argentina</p>
         <h1>Backend, automatización e inteligencia artificial aplicada.</h1>
         <p class="hero-text">
-          Desarrollo APIs y servicios con Java y Spring Boot, sistemas RAG y agentes con Python,
-          y aplicaciones web con React y TypeScript. Trabajo con testing, CI/CD, contenedores e
-          Infrastructure as Code.
+          Construyo sistemas RAG, agentes e integraciones de LLMs con Python y FastAPI, y APIs
+          con Java y Spring Boot. Mis herramientas resuelven problemas reales: hoy las usan miles
+          de emprendedores y equipos del sector público en Santa Fe.
         </p>
         <div class="hero-actions">
           <a class="button primary" href="#proyectos">Ver proyectos</a>
@@ -171,8 +187,8 @@
         </div>
 
         <ul class="hero-facts" aria-label="Áreas principales">
-          <li><strong>Backend</strong><span>Java · Spring Boot · Security</span></li>
-          <li><strong>AI & Automation</strong><span>Python · RAG · AI Agents</span></li>
+          <li><strong>IA aplicada</strong><span>RAG · Agentes · LLMs · n8n</span></li>
+          <li><strong>Backend</strong><span>Python · FastAPI · Java · Spring Boot</span></li>
           <li><strong>Cloud & Delivery</strong><span>Docker · Terraform · OCI</span></li>
         </ul>
       </div>
@@ -199,45 +215,52 @@
       </div>
     </section>
 
-    <section class="proof-strip" aria-label="Resumen profesional">
-      <div><strong>Backend</strong><span>APIs REST · Seguridad · Persistencia</span></div>
-      <div><strong>IA y automatización</strong><span>RAG · Agentes · Procesamiento de datos</span></div>
-      <div><strong>Infraestructura</strong><span>Docker · CI/CD · Terraform · Cloud</span></div>
+    <section class="proof-strip" aria-label="Impacto de los proyectos">
+      <div><strong>2500 usuarios</strong><span>PWA para emprendedores de la economía social, con funcionamiento offline</span></div>
+      <div><strong>+4000 certificados</strong><span>Emitidos y enviados por correo con el CRM de eventos</span></div>
+      <div><strong>De horas a segundos</strong><span>Procesamiento por ciclo del programa de microcréditos Banco Solidario</span></div>
     </section>
 
     <section class="section" id="sobre-mi">
       <div class="section-heading split-heading">
         <div>
           <p class="eyebrow">Perfil</p>
-          <h2>Software Developer con foco en backend, IA aplicada y automatización.</h2>
+          <h2>Desarrollador de software orientado a IA aplicada y automatización.</h2>
         </div>
         <p>
-          Java y Spring Boot para APIs y servicios backend; Python para RAG, agentes,
-          procesamiento de datos y automatización.
+          Python y FastAPI para RAG, agentes e integración de LLMs; Java y Spring Boot para
+          APIs y servicios backend; despliegue en contenedores sobre OCI.
         </p>
       </div>
 
       <div class="about-grid">
         <div class="about-copy">
           <p>
-            Experiencia en diseño de APIs REST, autenticación y autorización, persistencia,
-            arquitecturas multi-tenant, testing, CI/CD, contenedores e infraestructura como código.
+            Diseño pipelines RAG de punta a punta: ingesta de documentos, embeddings, recuperación
+            semántica, salidas estructuradas validadas contra schema y verificación de fidelidad
+            contra la fuente para acotar alucinaciones. En los agentes aplico límites de permisos
+            por rol y <strong>aprobación humana antes de cualquier acción irreversible</strong>.
           </p>
           <p>
-            También trabajo con <strong>Docker, Terraform, GitHub Actions y Oracle Cloud Infrastructure</strong>
-            para despliegue, automatización de infraestructura y operación de aplicaciones.
+            En el Gobierno de la Provincia de Santa Fe desarrollo herramientas internas que usan
+            equipos del programa y miles de emprendedores, y diseño capacitaciones en IA, comercio
+            electrónico y alfabetización digital para personas sin experiencia técnica previa.
+          </p>
+          <p>
+            Tecnicatura Superior en Desarrollo de Software (IFTS N.º 29, 2024–2026) y, a continuación,
+            la Licenciatura en Ciencia de Datos. Certificado en <strong>Oracle Cloud Infrastructure AI Foundations</strong>.
           </p>
         </div>
 
         <aside class="focus-card">
           <p class="card-kicker">Áreas de trabajo</p>
           <ul class="check-list">
-            <li>APIs REST y servicios backend</li>
-            <li>Spring Security, JWT y autorización</li>
-            <li>Arquitecturas multi-tenant</li>
-            <li>RAG, embeddings y AI Agents</li>
-            <li>Testing, CI/CD y contenedores</li>
-            <li>Infrastructure as Code y cloud</li>
+            <li>RAG, embeddings y recuperación semántica</li>
+            <li>Agentes de IA con aprobación humana</li>
+            <li>Integración de LLMs con salidas estructuradas</li>
+            <li>APIs REST con FastAPI y Spring Boot</li>
+            <li>Automatización de procesos con n8n</li>
+            <li>Docker, CI/CD e infraestructura en OCI</li>
           </ul>
         </aside>
       </div>
@@ -277,9 +300,47 @@
           </div>
         </article>
 
+        <article class="project-card project-ai project-wide">
+          <div class="project-meta"><span>RAG</span><span>Equipo de 8</span><span>En desarrollo</span></div>
+          <div class="project-card-body">
+            <div>
+              <p class="project-number">02 / Proyecto en equipo · No Country</p>
+              <h3>NuevaMente</h3>
+              <p>Sistema RAG que convierte documentación técnica en material educativo adaptado al perfil del destinatario, el formato de salida, el sector y el nivel de detalle. Mi rol: arquitectura, backend, pipeline RAG e infraestructura en OCI.</p>
+            </div>
+            <ul>
+              <li>Ingesta de PDF, Markdown y texto plano con segmentación y embeddings</li>
+              <li>Recuperación sobre ChromaDB con umbral de similitud, top-k y límite de contexto</li>
+              <li>Salidas estructuradas de Gemini validadas contra schema y verificación de fidelidad contra la fuente</li>
+              <li>Persistencia de originales y contenidos generados en OCI Object Storage</li>
+            </ul>
+          </div>
+          <p class="stack">Python · FastAPI · Pydantic · LangChain · ChromaDB · Google Gemini · OCI Object Storage · pytest</p>
+          <div class="project-links">
+            <a href="https://github.com/No-Country-simulation/nuevamente-g10-latam-equipo21" target="_blank" rel="noopener noreferrer">Código <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
+        <article class="project-card project-featured">
+          <div class="project-meta"><span>PWA</span><span>2500 usuarios</span></div>
+          <p class="project-number">03</p>
+          <h3>Herramientas para Emprendedores</h3>
+          <p>PWA para emprendedores de la economía social de Santa Fe: calculadora de costos, registro de ventas, recursos de marketing e identidad visual y prompts de IA. Diseñada para usuarios con baja alfabetización digital.</p>
+          <ul>
+            <li>En uso por 2500 emprendedores</li>
+            <li>Funcionamiento offline con Service Workers y persistencia local</li>
+            <li>Pruebas end-to-end con Playwright</li>
+          </ul>
+          <p class="stack">JavaScript · HTML · CSS · PWA · Service Workers · IndexedDB · jsPDF · Playwright</p>
+          <div class="project-links">
+            <a href="https://economiasocial.sachadev.me" target="_blank" rel="noopener noreferrer">Demo <span aria-hidden="true">↗</span></a>
+            <a href="https://github.com/LeandroMelchiori/herramientas_para_emprendedores" target="_blank" rel="noopener noreferrer">Código <span aria-hidden="true">↗</span></a>
+          </div>
+        </article>
+
         <article class="project-card project-featured">
           <div class="project-meta"><span>Backend</span><span>Spring Security</span></div>
-          <p class="project-number">02</p>
+          <p class="project-number">04</p>
           <h3>EcoSocial Backend</h3>
           <p>API REST para gestión de emprendimientos, productos y contenido comunitario.</p>
           <ul>
@@ -293,26 +354,9 @@
           </div>
         </article>
 
-        <article class="project-card project-featured">
-          <div class="project-meta"><span>PWA</span><span>Frontend</span></div>
-          <p class="project-number">03</p>
-          <h3>Herramientas para Emprendedores</h3>
-          <p>Aplicación web/PWA con módulos para gestión de costos, ventas, marketing digital y generación de documentación.</p>
-          <ul>
-            <li>Funcionamiento offline mediante Service Workers</li>
-            <li>Persistencia local y exportación de información</li>
-            <li>Pruebas end-to-end con Playwright</li>
-          </ul>
-          <p class="stack">JavaScript · HTML · CSS · PWA · Service Workers · jsPDF · Playwright</p>
-          <div class="project-links">
-            <a href="https://economiasocial.sachadev.me" target="_blank" rel="noopener noreferrer">Demo <span aria-hidden="true">↗</span></a>
-            <a href="https://github.com/LeandroMelchiori/herramientas_para_emprendedores" target="_blank" rel="noopener noreferrer">Código <span aria-hidden="true">↗</span></a>
-          </div>
-        </article>
-
         <article class="project-card">
           <div class="project-meta"><span>Full Stack</span><span>JWT</span></div>
-          <p class="project-number">04</p>
+          <p class="project-number">05</p>
           <h3>LiteraLura</h3>
           <p>Sistema Full Stack para gestión bibliotecaria con catálogo, ejemplares, socios, préstamos, reservas y multas.</p>
           <ul>
@@ -328,7 +372,7 @@
 
         <article class="project-card">
           <div class="project-meta"><span>Android</span><span>Kotlin</span><span>SQLite</span></div>
-          <p class="project-number">05</p>
+          <p class="project-number">06</p>
           <h3>Club Deportivo</h3>
           <p>Aplicación Android nativa para gestión de socios, actividades, profesores, horarios, pagos y vencimientos.</p>
           <ul>
@@ -347,7 +391,7 @@
         <div class="case-studies-heading">
           <div>
             <p class="eyebrow">Proyectos privados</p>
-            <h3>Backend transaccional, automatización documental y procesamiento de datos.</h3>
+            <h3>Backend transaccional, agentes de IA, automatización documental y procesamiento de datos.</h3>
             <p class="case-studies-intro">
               El código y los datos no son públicos. Se documentan alcance, implementación,
               arquitectura y stack técnico.
@@ -386,12 +430,13 @@
           <article data-case-number="02">
             <div class="case-topline">
               <span>CRM · Automatización documental · Gmail API</span>
-              <span class="case-private">Proyecto privado</span>
+              <span class="case-private">Proyecto privado · +4000 certificados emitidos</span>
             </div>
             <h4>CRM de Eventos y Certificados</h4>
             <p class="case-summary">
-              Aplicación para administración de eventos, contactos y participantes, generación
-              automatizada de certificados y distribución por correo electrónico.
+              Aplicación de escritorio para administración de eventos, contactos y participantes,
+              generación automatizada de certificados y distribución por correo electrónico.
+              En uso en las capacitaciones del Gobierno de la Provincia de Santa Fe.
             </p>
             <div class="case-story">
               <section>
@@ -413,12 +458,14 @@
           <article data-case-number="03">
             <div class="case-topline">
               <span>Datos · Normalización · Reporting</span>
-              <span class="case-private">Proyecto privado</span>
+              <span class="case-private">Código privado · Demo pública</span>
             </div>
-            <h4>Observatorio de Datos Banco Solidario</h4>
+            <h4>Analizador Banco Solidario</h4>
             <p class="case-summary">
-              Aplicación para consolidación y análisis de información proveniente de planillas Excel
-              y documentos Word, con normalización, validación y generación de reportes.
+              Herramienta de consolidación y control de datos para el programa provincial de
+              microcréditos. Unifica planillas Excel y documentos Word de distintas fuentes, detecta
+              inconsistencias y genera indicadores e informes para la toma de decisiones.
+              Redujo el procesamiento por ciclo de horas a segundos.
             </p>
             <div class="case-story">
               <section>
@@ -435,6 +482,36 @@
               </section>
             </div>
             <p class="case-stack">Next.js · React · TypeScript · SheetJS · Mammoth · IndexedDB · Vitest</p>
+            <div class="project-links">
+              <a href="https://informesbancosolidario.sachadev.me" target="_blank" rel="noopener noreferrer">Demo <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article data-case-number="04">
+            <div class="case-topline">
+              <span>Agentes de IA · Seguridad · Modelos locales</span>
+              <span class="case-private">Proyecto personal · Código privado</span>
+            </div>
+            <h4>Nanami — Plataforma personal de agentes de IA</h4>
+            <p class="case-summary">
+              Asistente personal local sobre n8n, PostgreSQL y modelos corriendo con Ollama, diseñado
+              para que los agentes puedan actuar sin perder el control humano sobre lo que hacen.
+            </p>
+            <div class="case-story">
+              <section>
+                <h5>Permisos</h5>
+                <p>Cada rol de agente tiene su propio techo de permisos y credenciales separadas.</p>
+              </section>
+              <section>
+                <h5>Validación</h5>
+                <p>Las salidas del modelo se validan contra JSON Schema antes de persistirse.</p>
+              </section>
+              <section>
+                <h5>Control humano</h5>
+                <p>Toda acción irreversible requiere aprobación, registrada como estado y no como ejecución en pausa. Incluye modelo de amenazas y decisiones de arquitectura versionadas.</p>
+              </section>
+            </div>
+            <p class="case-stack">n8n · PostgreSQL · Ollama · JSON Schema · Docker</p>
           </article>
         </div>
       </div>
@@ -455,34 +532,106 @@
       <div class="timeline">
         <article class="timeline-item">
           <div class="timeline-marker" aria-hidden="true"></div>
-          <div class="timeline-date">Actualidad</div>
+          <div class="timeline-date">Sept. 2026 – hoy</div>
+          <div class="timeline-content">
+            <h3>Backend, AI Developer &amp; Cloud</h3>
+            <p class="timeline-place">No Country · Proyecto colaborativo · Remoto</p>
+            <p>En un equipo de 8 personas, estoy a cargo del backend, el pipeline RAG y la infraestructura en OCI de NuevaMente. Definí la arquitectura y los contratos de datos que consume el resto del equipo.</p>
+          </div>
+        </article>
+
+        <article class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-date">Abr. 2025 – hoy</div>
           <div class="timeline-content">
             <h3>Capacitador y Asistente Técnico</h3>
             <p class="timeline-place">Economía Social y Transformación Digital · Gobierno de la Provincia de Santa Fe</p>
-            <p>Trabajo en iniciativas de digitalización, formación tecnológica y asistencia técnica para emprendimientos y organizaciones.</p>
-            <p>Diseño y dicto talleres sobre inteligencia artificial, marketing digital, Canva, automatización y herramientas digitales aplicadas a gestión, comunicación y productividad.</p>
+            <p>Desarrollo herramientas internas para los equipos del programa y para los emprendedores: el Analizador Banco Solidario, la PWA de herramientas para emprendedores y el CRM de eventos y certificados.</p>
+            <p>Diseño y dicto talleres de comercio electrónico, marketing digital, costos, sustentabilidad e inteligencia artificial en distintas localidades de la provincia, para más de 4000 personas sin experiencia técnica previa.</p>
           </div>
         </article>
 
         <article class="timeline-item">
           <div class="timeline-marker" aria-hidden="true"></div>
-          <div class="timeline-date">Actualidad</div>
+          <div class="timeline-date">Feb. 2026 – hoy</div>
           <div class="timeline-content">
-            <h3>Instructor de Tecnología Educativa y Desarrollo de Videojuegos</h3>
-            <p class="timeline-place">Centro Cultural de General Lagos</p>
-            <p>Diseño y dicto actividades de formación tecnológica para adolescentes, con talleres de desarrollo de videojuegos, pensamiento lógico, programación, diseño de mecánicas y creación de prototipos.</p>
+            <h3>Instructor de Alfabetización Digital y Tecnología Educativa</h3>
+            <p class="timeline-place">Centro Cultural · Comuna de General Lagos</p>
+            <p>Talleres para adolescentes con videojuegos y desafíos interactivos como herramienta de aprendizaje: hardware, pensamiento lógico, introducción a la programación y desarrollo de videojuegos con GameMaker y Godot.</p>
           </div>
         </article>
 
         <article class="timeline-item">
           <div class="timeline-marker" aria-hidden="true"></div>
-          <div class="timeline-date">En formación</div>
+          <div class="timeline-date">Sept. – dic. 2024</div>
           <div class="timeline-content">
-            <h3>Tecnicatura Superior en Desarrollo de Software</h3>
-            <p class="timeline-place">IFTS N.º 29</p>
-            <p>Formación en desarrollo backend y Full Stack, testing, automatización, infraestructura e inteligencia artificial aplicada.</p>
+            <h3>Backend Developer</h3>
+            <p class="timeline-place">No Country · Proyecto colaborativo · Remoto</p>
+            <p>Endpoints, reglas de negocio, integración con bases de datos relacionales y APIs REST en un equipo multidisciplinario con metodologías ágiles. Java, Spring Boot, Python, FastAPI, MySQL y PostgreSQL.</p>
           </div>
         </article>
+
+        <article class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <div class="timeline-date">2022 – 2024</div>
+          <div class="timeline-content">
+            <h3>Marketing Digital</h3>
+            <p class="timeline-place">Profesional independiente</p>
+            <p>Estrategias digitales, canales de venta y comercio electrónico para emprendimientos y pequeños negocios. Esta experiencia se integró luego a mi trabajo de capacitación y desarrollo de herramientas para emprendedores.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="formacion">
+      <div class="section-heading split-heading">
+        <div>
+          <p class="eyebrow">Formación</p>
+          <h2>Educación y certificaciones</h2>
+        </div>
+        <p>
+          Formación técnica formal complementada con certificaciones en cloud, IA generativa
+          y aseguramiento de calidad.
+        </p>
+      </div>
+
+      <div class="about-grid">
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-date">2024 – 2026</div>
+            <div class="timeline-content">
+              <h3>Tecnicatura Superior en Desarrollo de Software</h3>
+              <p class="timeline-place">IFTS N.º 29</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-date">Próximo paso</div>
+            <div class="timeline-content">
+              <h3>Licenciatura en Ciencia de Datos</h3>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-date">2024</div>
+            <div class="timeline-content">
+              <h3>Diplomatura Node.js Developer</h3>
+              <p class="timeline-place">EducacionIT</p>
+            </div>
+          </article>
+        </div>
+
+        <aside class="focus-card">
+          <p class="card-kicker">Certificaciones destacadas</p>
+          <ul class="check-list">
+            <li>Oracle Cloud Infrastructure Certified AI Foundations Associate · Oracle (2026)</li>
+            <li>ONE AI for Tech: Ingeniería de Agentes, RAG Avanzado y Orquestación con IA Generativa · Alura Latam (2026)</li>
+            <li>Talento Tech: Aseguramiento de la Calidad de Software · Ministerio de Educación CABA (2026)</li>
+            <li>AWS Academy Cloud Foundations, Cloud Architecting y Cloud Security Foundations · AWS (2025)</li>
+            <li>Oracle Next Education Back-end: Java y Spring Boot · Alura Latam (2025)</li>
+          </ul>
+        </aside>
       </div>
     </section>
 
@@ -499,13 +648,13 @@
       </div>
 
       <div class="tech-grid">
-        <article><div class="tech-icon">BE</div><h3>Backend</h3><p>Java, Spring Boot, Spring Security, REST APIs, JWT, JPA, Hibernate y Flyway.</p></article>
+        <article><div class="tech-icon">BE</div><h3>Backend</h3><p>Python, FastAPI, Pydantic, Java, Spring Boot, Spring Security, REST APIs, JWT, JPA, Hibernate y Flyway.</p></article>
         <article><div class="tech-icon">FE</div><h3>Frontend</h3><p>React, Next.js, TypeScript, JavaScript, HTML, CSS y PWA.</p></article>
         <article><div class="tech-icon">MB</div><h3>Mobile</h3><p>Kotlin, Android SDK, SQLite y Material Design.</p></article>
-        <article><div class="tech-icon">AI</div><h3>AI & Automation</h3><p>Python, RAG, LangChain, LangGraph, ChromaDB, embeddings, AI Agents, OpenAI, Gemini, Groq, Ollama y n8n.</p></article>
+        <article><div class="tech-icon">AI</div><h3>AI & Automation</h3><p>RAG, LangChain, LangGraph, ChromaDB, embeddings, agentes, salidas estructuradas, OpenAI, Gemini, Groq, Ollama, n8n y Streamlit.</p></article>
         <article><div class="tech-icon">DB</div><h3>Data & Storage</h3><p>PostgreSQL, MySQL, MongoDB, SQLite, ChromaDB, MinIO y almacenamiento compatible con S3.</p></article>
         <article><div class="tech-icon">OP</div><h3>DevOps & Cloud</h3><p>Docker, Docker Compose, GitHub Actions, CI/CD, Terraform, OCI, AWS e Infrastructure as Code.</p></article>
-        <article><div class="tech-icon">QA</div><h3>Testing</h3><p>JUnit, Vitest, Playwright, Postman, API Testing, E2E Testing y Testcontainers.</p></article>
+        <article><div class="tech-icon">QA</div><h3>Testing</h3><p>pytest, JUnit, Vitest, Playwright, Testcontainers, Postman, testing de APIs y E2E.</p></article>
       </div>
     </section>
 
@@ -513,7 +662,7 @@
       <div class="contact-inner">
         <p class="eyebrow">Contacto</p>
         <h2>Leandro Melchiori</h2>
-        <p>Abierto a oportunidades en backend, desarrollo Full Stack, AI Engineering, automatización e infraestructura cloud.</p>
+        <p>Abierto a oportunidades en backend, IA aplicada (RAG, agentes e integración de LLMs), automatización e infraestructura cloud.</p>
         <div class="hero-actions">
           <a class="button primary" href="mailto:leandromelchiori@gmail.com">Email</a>
           <a class="button secondary" href="https://www.linkedin.com/in/leandromelchiori-developer/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
